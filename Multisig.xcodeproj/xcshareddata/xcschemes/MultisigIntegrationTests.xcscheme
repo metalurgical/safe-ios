@@ -28,6 +28,16 @@
                ReferencedContainer = "container:Multisig.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "3204FCCB27B6E7F10047E6CB"
+               BuildableName = "Multisig_PRODUITests.xctest"
+               BlueprintName = "Multisig_PRODUITests"
+               ReferencedContainer = "container:Multisig.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
