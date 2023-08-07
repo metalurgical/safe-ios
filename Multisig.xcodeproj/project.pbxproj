@@ -949,6 +949,7 @@
 		93EF2FAC27C551B60077BE95 /* FinalStepInstructionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93EF2FAA27C551B60077BE95 /* FinalStepInstructionTableViewCell.xib */; };
 		93EF2FAF27C551DC0077BE95 /* StepInstructionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93EF2FAD27C551DC0077BE95 /* StepInstructionTableViewCell.swift */; };
 		93EF2FB027C551DC0077BE95 /* StepInstructionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93EF2FAE27C551DC0077BE95 /* StepInstructionTableViewCell.xib */; };
+		93F136552A7FE20400AC1C3E /* ThresholdKey in Frameworks */ = {isa = PBXBuildFile; productRef = 93F136542A7FE20400AC1C3E /* ThresholdKey */; };
 		AD3031332AAA437DA1EED403 /* TransferNoWarningButDelegateWithName.json in Resources */ = {isa = PBXBuildFile; fileRef = AD30370F4D8215898B27959A /* TransferNoWarningButDelegateWithName.json */; };
 		AD30333439A0A2388F0749B0 /* ChangeConfirmationsFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD303AD3E32FBAF7FC2B202B /* ChangeConfirmationsFlow.swift */; };
 		AD303399362FE10A1FB79BB6 /* ReviewChangeConfirmationsTxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD303815FA00D7D2A33A3F8C /* ReviewChangeConfirmationsTxViewController.swift */; };
@@ -2050,6 +2051,7 @@
 				0A0C094C287D7D48000CEB4F /* WalletConnectSwift in Frameworks */,
 				55DA0663269C9411006C9AA5 /* Version in Frameworks */,
 				0497B2A829A63A3E007109ED /* Starscream in Frameworks */,
+				93F136552A7FE20400AC1C3E /* ThresholdKey in Frameworks */,
 				0A259AB5287D83F9006770E7 /* UnstoppableDomainsResolution in Frameworks */,
 				55D3FF90260B2B21008ABD2B /* TrustKit in Frameworks */,
 				55D3FE8C260A0F88008ABD2B /* SwiftCryptoTokenFormatter in Frameworks */,
@@ -4680,6 +4682,7 @@
 				04C22B312A36807500F58A15 /* Web3ContractABI */,
 				04C22B332A36807500F58A15 /* Web3PromiseKit */,
 				04AECBB62A744B21008D5A35 /* MoonpaySDK */,
+				93F136542A7FE20400AC1C3E /* ThresholdKey */,
 			);
 			productName = Multisig;
 			productReference = 0A93DD532445CC8A00688050 /* Multisig_PROD.app */;
@@ -4804,6 +4807,7 @@
 				04C22B2B2A367FF800F58A15 /* XCRemoteSwiftPackageReference "customauth-swift-sdk" */,
 				04C22B2E2A36807500F58A15 /* XCRemoteSwiftPackageReference "SafeWeb3" */,
 				04AECBB52A744B21008D5A35 /* XCRemoteSwiftPackageReference "mobile-sdk-ios" */,
+				93F136532A7FE20400AC1C3E /* XCRemoteSwiftPackageReference "libtkey-pkg" */,
 			);
 			productRefGroup = 0A93DD542445CC8A00688050 /* Products */;
 			projectDirPath = "";
@@ -7355,6 +7359,14 @@
 				minimumVersion = 14.0.0;
 			};
 		};
+		93F136532A7FE20400AC1C3E /* XCRemoteSwiftPackageReference "libtkey-pkg" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/torusresearch/libtkey-pkg/";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.4;
+			};
+		};
 		D80B5A11276B5FAD00D6E024 /* XCRemoteSwiftPackageReference "SkeletonView" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Juanpe/SkeletonView.git";
@@ -7554,6 +7566,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 93EE3F732760F49700111F17 /* XCRemoteSwiftPackageReference "intercom-ios" */;
 			productName = Intercom;
+		};
+		93F136542A7FE20400AC1C3E /* ThresholdKey */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 93F136532A7FE20400AC1C3E /* XCRemoteSwiftPackageReference "libtkey-pkg" */;
+			productName = ThresholdKey;
 		};
 		D80B5A12276B5FAD00D6E024 /* SkeletonView */ = {
 			isa = XCSwiftPackageProductDependency;
